@@ -3,7 +3,7 @@
 /* Additional styles for improved aesthetics */
 
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -41,6 +41,7 @@ body {
 .rightNav {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 #search {
@@ -57,6 +58,12 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.login-button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
 }
 
 .login-button a {
