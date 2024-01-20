@@ -8,9 +8,9 @@ html {
 
   }
 body { 
-		background-size: cover;
-		background-attachment: fixed;
-	  	font-family: Arial, sans-serif;
+	background-size: cover;
+	background-attachment: fixed;
+	/* font-family: Arial, sans-serif; */
 	font-size: 16px;
 	color: #111010;
 	background-color: #0b0a0a;
@@ -19,11 +19,16 @@ body {
   }
 
 .container {
-	max-width:none;
-	margin: 0 auto;
-	padding: 0 10px;
-    background: #10f3a7;
-    color: #070707;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: inline-flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
     
 }
 .container li{
@@ -36,12 +41,13 @@ body {
     margin-right: 8em;
    }
    .logo img {
-       width: 150px;
-       border-radius: 20px;
+		margin-top: 1.75rem;
+		width: 150px;
+       border-radius: 5px;
        }
 
 header {
- background-image:url(readbook.png);
+ background-image:url(/imgs/librarybg.gif);
  width: 100%;
  background-size:auto;
  backdrop-filter: blur(5px);
@@ -55,25 +61,22 @@ header {
 }
 header h1{
 	margin-top: 5rem;
-	font-family: "Lucida Sans";
+	/* font-family: "Lucida Sans"; */
 	font-weight: 99px;
-	font-size: 4rem;
+	font-size: 3.5rem;
 	line-height: 10.563rem;
 	text-align: center;
-	color: #5336bc;
-	text-shadow: 1px 2px 2px rgb(179, 171, 171);
+	color: #f4f4f4;
+	text-shadow: 1px 2px 2px rgb(0, 0, 0);
 }
 header p{
-    color:#5336bc;
-border:rgb(18, 10, 0);
-border-width:5px; 
-border-style:solid;
-font-weight: 200;
-font-size: 30px;
-margin-left: 20rem;
-margin-right:20rem;
-font-family:cursive;
-justify-content: center;
+	color:#f5f5f5; 
+	font-weight: 100;
+	font-size: 30px;
+	margin-left: 20rem;
+	margin-right: 20rem;
+	/* font-family:cursive; */
+	justify-content: center;
 
 }
 
@@ -108,10 +111,10 @@ nav ul li a {
 	margin-bottom: 2em;
 	display: block;
 	padding: 10px;
-	color: #070707;
+	color: #cfaaaa;
 	text-decoration: none;
 	border-radius: 3px;
-	transition: background-color 0.3s ease-in-out;
+	transition: background-color 0.4s ease-in-out;
 }
 
 li{
@@ -119,8 +122,9 @@ li{
 }
 
 nav ul li a:hover {
-	background-color: #f7f1f1;
-	color: #070707;
+	background-color: #8b7a7a;
+	color: #d4bbbb;
+	opacity: 0.5;
 }
 
 /* form {
@@ -246,7 +250,7 @@ section {
 	background-color: rgba(120, 113, 113, 0.947);
 }
 .inspiration .inspiration-card {
-  background-image: url(https://i.pinimg.com/564x/5a/4d/04/5a4d04d7a0787b8b89134918ac8fde1b.jpg);
+  background-image: url(/imgs/inspiration-card.gif);
     position: relative;
     max-width: 300px;
     height: 225px;
@@ -258,12 +262,15 @@ section {
     box-shadow: 0 5px 20px rgba(6, 6, 6, 0.5);
     transition: 0.3s ease-in-out;
     border-radius: 15px;
+	color: #d4bbbb;
 }
 #quotes p{
-	font-family:cursive;
+	/* font-family:cursive; */
 	justify-content: center;
-    font-size: 22px;
+    font-size: 30px;
 }
+
+
 hr {
     width: 90%;
     margin: 0 auto;
@@ -278,7 +285,7 @@ hr {
 }
 /* feature */
 /* feature */
-footer {
+/* footer {
 	background-color: #1f1e1ed2;
 	color: #fff;
 	display: flex;
@@ -324,8 +331,8 @@ footer {
   footer .container {
 	max-width: 1100px;
 	margin: 0 auto;
-  }
-  
+  } */
+/*   
   @media (min-width: 767px) {
 	footer .col-md-4 {
 	  width: 33.33%;
@@ -361,4 +368,4 @@ footer {
 	align-items:flex-end;
 	width: 50px;
 	border-radius:10px;
-  }
+  } */
