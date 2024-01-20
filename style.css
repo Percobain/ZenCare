@@ -15,6 +15,9 @@ body {
 
 /* Navigation bar */
 
+nav {
+    opacity: 0.7;
+}
 
 .navbar {
     display: flex;
@@ -37,7 +40,8 @@ body {
 }
 
 .logo img {
-    height: 50px;
+    height: 30px;
+    border-radius: 5px;
 }
 
 .rightNav {
@@ -74,11 +78,17 @@ body {
 }
 
 header {
-    background-image: url('https://i.pinimg.com/originals/45/4f/e2/454fe26eb6dd135ce7feaeb3b1929573.gif'); /* Update with your new background image */
+    background-image: url(/imgs/homebg.gif); /* Update with your new background image */
     background-size: cover;
-    color: #ffffff;
+    color: #f6cece;
     text-align: center;
-    padding: 150px 0;
+    padding: 240px 0px;
+}
+
+.header-header {
+    font-size: 40px;
+    margin-bottom: auto;
+    margin-top: -150px; /* Adjust the value as needed */
 }
 
 /* services */
@@ -96,6 +106,7 @@ header {
 #services {
     padding: 50px 0;
 }
+
 
 .container {
     display: flex;
@@ -170,6 +181,7 @@ footer {
 
 .footer-logo img {
     height: 50px;
+    border-radius: 5px;
 }
 
 .footer-content {
