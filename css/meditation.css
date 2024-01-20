@@ -1,194 +1,182 @@
-/* Customize the advanced audio player's appearance here */
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: #0b0a0a; /* Set your desired background color */
+}
+
 .audio-player {
-    width: 100%;
-    margin: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  object-fit: cover;
 }
 
 img {
-    height: 99%;
-    width: 100%;
-    }
-    
+  height: 99%;
+  width: 100%;
+}
+
 .controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0px;
 }
 
 .progress-bar {
-    width: 100;
-    height: 1%;
-    background-color: #895151;
+  width: 100%;
+  height: 1%;
+  background-color: #0b0021;
+  opacity: 1;
 }
 
 #current-time, #total-time {
-    margin-top: 10px;
-    font-size: 28;
-    font-weight: 600;
-    color: #0c0345;
+  margin-top: 10px;
+  font-size: 28px; /* Use proper unit */
+  font-weight: 600;
+  color: #3c3e3c;
 }
 
-body{
-    color: rgb(255, 255, 255);
-    
+p {
+  font-size: 30px; /* Use proper unit */
 }
-p{
-    font-size: 30;
+
+.controls2 {
+  width: 100px;
+  height: 100px;
+  background: #253033;
+  border: 0;
+  color: rgb(175, 180, 204);
+  font-size: 20px; /* Use proper unit */
+  font-weight: bolder;
+  border-radius: 40px;
+  transition: 0.4s ease;
 }
-.controls2{
 
-        width: 100px;
-        height: 100px;
-        background: #ADD8E6;
-        border: 0;
-        color: rgb(31, 61, 194);
-        font-family: 'Lucida Console';
-        font-size:  20;
-        font-weight: bolder;
-        padding: 5px;
-        border-radius: 40px;
-        transition: 0.4s ease;}
-    
-      .controls2:hover {
-        background: rgb(118, 160, 131);
-        cursor: pointer;
-      }
+/* Add your keyframe definitions here */
 
-
+.controls2:hover {
+  background: rgb(41, 2, 78);
+  cursor: pointer;
+}
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 25%;
-    width: 12%;
- 
-  }
-  
-  .gradient-circle {
-    background: conic-gradient(
-        #732dff 40%,
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25%;
+  width: 12%;
+  position: absolute;
+  top: 20%;
+  left: 44%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 
-        #148470 60%,
-  
-      #7416e0 100%
-    );
-    height: 110%;
-    width: 110%;
-    position: absolute;
-    top: -5%;
-    left: -5%;
-    z-index: -2;
-    border-radius: 50%;
-  }
-  
-  .circle {
-    background-color: #010f1c;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-;
-    z-index: -1;
-    border-radius: 50%;
-  }
-  
-  .pointer-container {
-    position: absolute;
-    top: -40px;
+.gradient-circle {
+  background: conic-gradient(#010b3b 40%, #350361 60%, #096868 100%);
+  height: 110%;
+  width: 110%;
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  z-index: -2;
+  border-radius: 50%;
+}
 
-    left: 140px;
-    width: 20px;
-    height: 190px;
-    animation: rotate 7.5s linear forwards infinite;
-    transform-origin: bottom center;
-  }
-  
-  
-  
-  .container.grow {
-    animation: grow 3s linear forwards;
-  }
-  
-  .container.shrink {
-    animation: shrink 3s linear forwards;
-  }
-  
-  
-  
-  @keyframes grow {
-    from {
-      transform: scale(1);
-    }
-  
-    to {
-      transform: scale(1.2);
-    }
-  }
-  
-  @keyframes shrink {
-    from {
-      transform: scale(1.2);
-    }
-  
-    to {
-      transform: scale(1);
-    }
+.circle {
+  background-color: #010f1c;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.pointer-container {
+  position: absolute;
+  top: -40px;
+  left: 140px;
+  width: 20px;
+  height: 190px;
+  animation: rotate 7.5s linear forwards infinite;
+  transform-origin: bottom center;
+}
+
+.container.grow {
+  animation: grow 3s linear forwards;
+}
+
+.container.shrink {
+  animation: shrink 3s linear forwards;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1);
   }
 
+  to {
+    transform: scale(1.2);
+  }
+}
 
-  .controls3 {
- 
-    width: 30%;
-    height: 25px;
-    background: #ffffff;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
+@keyframes shrink {
+  from {
+    transform: scale(1.2);
   }
 
-  .controls3:hover {
-    opacity: 1;
+  to {
+    transform: scale(1);
   }
-  
-  .controls3::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 25px;
-    height: 25px;
-    background: #04AA6D;
-    cursor: pointer;
-  }
+}
 
+.controls3 {
+  width: 500px;
+  color: #000000;
+}
 
+.audio-player { position: relative; }
 
-    .audio-player {position: relative; } 
-    .controls { position: absolute; top: 10; right: 0; } 
-    .controls2 {
+.controls { position: absolute; top: 10; right: 0; }
 
+.controls2 {
   position: absolute;
   top: 65%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-    .controls3{
 
-position: absolute;
-top: 80%;
-left: 50%;
--ms-transform: translate(-50%, -50%);
-transform: translate(-50%, -50%);
-
+.controls3 {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 150px; /* Adjust the width as needed */
+  height: 10px; /* Adjust the height as needed */
+  background-color: #333; /* Dark background color */
+  border-radius: 5px; /* Rounded corners */
 }
-    .controls4 { position: absolute; top: 95%; left: 0.75%; } 
-    .controls5 { position: absolute; top: 95%; right: 0.75%; }
-    .container {
 
-position: absolute;
-top: 20%;
-left: 44%;
--ms-transform: translate(-50%, -50%);
-transform: translate(-50%, -50%);
+.controls4 {
+  position: absolute;
+  top: 95%;
+  left: 2%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
+
+.controls5 {
+  position: absolute;
+  top: 95%;
+  right: -0.75%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#text {
+  color: white;
+}
+
