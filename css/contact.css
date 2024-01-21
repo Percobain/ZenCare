@@ -16,7 +16,7 @@ html {
 
 ::placeholder {
     color: #000000;
-    font-weight: bold;
+    font-weight: normal;
     font-family: Poppins, sans-serif;
     
 }
