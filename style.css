@@ -219,6 +219,9 @@ footer {
 
 }
 
+.footer-section {
+    flex-basis: calc(33.33% - 20px);
+}
 
 .footer-section h4 {
     margin-bottom: 10px;
@@ -239,5 +242,7 @@ footer {
     margin-top: 20px;
 }
 
-
+.footer-header {
+    margin-left: 10px;
+}
 
