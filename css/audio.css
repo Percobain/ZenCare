@@ -123,16 +123,7 @@
     width: 100%;
   }
   
-  .hamburger {
-    display: none;
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 3px;
-    cursor: pointer;
-    z-index: 200;
-  }
+
   
   .center {
     position: absolute;
