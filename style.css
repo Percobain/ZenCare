@@ -246,3 +246,11 @@ footer {
     margin-left: 10px;
 }
 
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 821px) {
+        flex-direction: row;
+
+    }
+}
